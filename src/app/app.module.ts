@@ -1,5 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MaterialStyleModule } from './styles.module';
+
+import 'hammerjs';
 
 import { AppComponent } from './app.component';
 
@@ -8,7 +13,9 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MaterialStyleModule
   ],
   providers: [],
   bootstrap: [AppComponent]
